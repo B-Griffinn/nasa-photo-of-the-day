@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
 import ParentImg from "./components/ImageComponents/ParentImg";
-import ParentTitle from "./components/TitleComponents/TitleCard";
+import ParentTitle from "./components/TitleComponents/ParentTitle";
 
 function App() {
   // Add effect hook for api
