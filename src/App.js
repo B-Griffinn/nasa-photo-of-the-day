@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import ParentImg from "./components/ImageComponents/ParentImg";
 import ParentTitle from "./components/TitleComponents/ParentTitle";
+import ParentExplanation from "./components/ExplanationComponents/ParentExplanation";
 
 function App() {
   // Add effect hook for api
@@ -30,6 +31,7 @@ function App() {
       <div className="my-content-container">
         <ParentImg />
         <ParentTitle />
+        <ParentExplanation />
       </div>
     </div>
   );
