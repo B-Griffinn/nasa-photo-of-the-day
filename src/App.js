@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
-// Import Axios
 import axios from "axios";
+import ParentImg from "./components/ImageComponents/ParentImg";
+import APODimg from "./components/ImageComponents/APODimg";
 
 function App() {
   // Add effect hook for api
@@ -11,7 +12,9 @@ function App() {
   useEffect( () => {
     axios.get("https://api.nasa.gov/planetary/apod?api_key=kifJIQzGxcqnP80rgzLs5yZGNcMycSWdVmsVMnqE")
     .then(res => {
-      console.log(res)
+      const dataAPi = res.data;
+      setApod(dataAPi);
+      console.log(dataAPi) // Entire Object
     }) 
     .catch(err => {
       console.log(err)
@@ -24,6 +27,9 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
+      <div className="my-content-container">
+        <ParentImg />
+      </div>
     </div>
   );
 }
