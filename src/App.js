@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
 import ParentImg from "./components/ImageComponents/ParentImg";
-import APODimg from "./components/ImageComponents/APODimg";
+import ParentTitle from "./components/TitleComponents/TitleCard";
 
 function App() {
   // Add effect hook for api
@@ -29,6 +29,7 @@ function App() {
       </p>
       <div className="my-content-container">
         <ParentImg />
+        <ParentTitle />
       </div>
     </div>
   );

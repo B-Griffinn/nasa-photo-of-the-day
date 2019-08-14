@@ -14,8 +14,12 @@ useEffect( () => {
 .then(res => {
     const image = res.data;
     setImg(image);
-    console.log(image);
+
 })
+.catch(err => {
+    console.log(err)
+})
+
 }, [] )
 
 console.log(img)
