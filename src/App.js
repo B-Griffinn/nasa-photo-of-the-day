@@ -5,13 +5,15 @@ import ParentImg from "./components/ImageComponents/ParentImg";
 import ParentTitle from "./components/TitleComponents/ParentTitle";
 import ParentExplanation from "./components/ExplanationComponents/ParentExplanation";
 import DateParent from "./components/DateComponent/DateParent";
+
 import styled from "styled-components";
 
 const StyleApp = styled.div`
 background-color: lightGrey;
 width: 80%;
+
 margin-left: 10%;
-height: 100vh;
+margin-bottom: 15px;
 `;
 
 

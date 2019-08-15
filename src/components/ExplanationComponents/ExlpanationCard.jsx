@@ -8,6 +8,8 @@ const WrapperDiv = styled.div`
   
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 5px;
+
   font-family: sans-serif;
   text-align: center;
   background-color: #bbc7de;
