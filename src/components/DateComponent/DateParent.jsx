@@ -14,12 +14,11 @@ function DateParent() {
             const dateStr = res.data;
             setDay(dateStr);
         }) 
-        .catch(err => { } );
+        .catch(err => { } )
     }, [] )
     
     if(!day) return <h3>Loading...</h3>
-    
-    
+        console.log("This is date: " + day.date)
     return (
         <DateCard key={day.date} dateDisplay={day.date}/>
     )
