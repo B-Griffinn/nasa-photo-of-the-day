@@ -1,27 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import axios from "axios";
 import TitleCard from "./TitleCard";
 
 // Create function 
-function Title() {
-// Add useEffect Hook
-const [title, setTitle] = useState();
+function Title(props) {
 
-useEffect( () => {
-axios.get("https://api.nasa.gov/planetary/apod?api_key=kifJIQzGxcqnP80rgzLs5yZGNcMycSWdVmsVMnqE")
-.then(res => {
-    const titleStr = res.data;
-    setTitle(titleStr);
-}) 
-.catch(err => {
-    console.log(err)
-})
-}, [])
-console.log(title)
-if(!title) return <h3>Loading...</h3>
+
 
 return (
-    <TitleCard key={title.title} title={title.title} />
+    <h3>{props.myTitle}</h3> 
 )
 
 } //END Title funciton 

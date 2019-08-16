@@ -19,7 +19,7 @@ margin-bottom: 15px;
 
 function App() {
   // Add effect hook for api
-  const [apod, setApod] = useState("");
+  const [apod, setApod] = useState([]);
 
   // Create out useEffect
   useEffect( () => {
@@ -40,10 +40,10 @@ function App() {
         A new random image from NASA, DAILY 🚀!
       </p>
       <div className="my-content-container">
-        <ParentImg />
-        <ParentTitle />
-        <DateParent />
-        <ParentExplanation />
+        <ParentImg myImg={apod.url}/>
+        <ParentTitle myTitle={apod.title}/>
+        <DateParent myDate={apod.date}/>
+        <ParentExplanation myExplanation={apod.explanation}/>
       </div>
     </StyleApp>
   );

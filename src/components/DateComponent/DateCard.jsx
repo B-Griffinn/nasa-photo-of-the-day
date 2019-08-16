@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components";
 
 const DateStyle = styled.div`
@@ -24,7 +23,7 @@ const DateCard = props => {
     // NOTE: The value given to setState() must be of the same type as your value that is expected to be
     return (
         <DateStyle>
-            <p>Image for: {props.dateDisplay}</p>
+            <p>Image for: {props.myDate}</p>
         </DateStyle>
     )
 }
